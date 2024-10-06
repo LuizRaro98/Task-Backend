@@ -1,4 +1,4 @@
-const { authSecret } = require('../.env');
+const authSecret = process.env.AUTH_SECRET; // Acesse a variável de ambiente diretamente
 const jwt = require('jwt-simple');
 const bcrypt = require('bcrypt-nodejs');
 
