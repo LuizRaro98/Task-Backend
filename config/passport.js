@@ -1,4 +1,4 @@
-const { authSecret } = require('../.env')
+const authSecret = process.env.AUTH_SECRET; // Acesse a variável de ambiente diretamente
 const passport = require('passport')
 const passportJwt = require('passport-jwt')
 const { Strategy, ExtractJwt } = passportJwt
